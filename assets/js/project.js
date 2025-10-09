@@ -179,6 +179,16 @@ const projects = [
     Previewlink: "",
     Githublink: "",
   },
+  {
+    title: "Magnet Dance",
+    cardImage: "assets/images/project-page/Magnet Dance thumbnail.jpg",
+    images: ["assets/images/project-page/Magnet Dance - Stop motion found object animated short.mp4"],
+    description: "Stop motion found object animated short featuring dancing magnets.",
+    tagimg:
+      "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
 ];
 
 // function for rendering project cards data
@@ -226,6 +236,14 @@ function openImageGallery(projectIndex) {
 
 function closeImageGallery() {
   const modal = document.getElementById('imageGalleryModal');
+  const videoElement = document.getElementById('galleryVideo');
+
+  // Stop video playback
+  if (videoElement && videoElement.src) {
+    videoElement.pause();
+    videoElement.currentTime = 0;
+  }
+
   modal.style.display = 'none';
   document.body.style.overflow = 'auto';
 }
