@@ -7,7 +7,7 @@ const projectcards = document.querySelector(".projectcards");
 const projects = [
   {
     title: "Abstract 3D Scenes",
-    cardImage: "assets/images/project-page/Scene 1.jpg",
+    cardImage: "assets/images/project-page/Scene 3.jpg",
     images: [
       "assets/images/project-page/Scene 1.jpg",
       "assets/images/project-page/Scene 2 .jpg",
