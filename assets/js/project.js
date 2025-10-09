@@ -106,10 +106,10 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Movie Recommendation System",
-    cardImage: "assets/images/project-page/movie-recommendation.jpeg",
-    images: ["assets/images/project-page/movie-recommendation.jpeg"],
-    description: "Built using Tensorflow.",
+    title: "Portrait of Barry the Parakeet",
+    cardImage: "assets/images/project-page/Drawing of Barry the parakeet.png",
+    images: ["assets/images/project-page/Drawing of Barry the parakeet.png"],
+    description: "A portrait illustration of Barry the Parakeet.",
     tagimg:
       "https://cdn-images-1.medium.com/max/1200/1*iDQvKoz7gGHc6YXqvqWWZQ.png",
     Previewlink: "",
