@@ -323,6 +323,10 @@ add
         <div class="gallery-content">
             <button class="gallery-nav gallery-prev" id="prevBtn" onclick="prevImage()">&#10094;</button>
             <img id="galleryImage" class="gallery-image" src="" alt="Project Image">
+            <video id="galleryVideo" class="gallery-image" controls loop style="display: none;">
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <button class="gallery-nav gallery-next" id="nextBtn" onclick="nextImage()">&#10095;</button>
         </div>
         <div id="imageCounter" class="gallery-counter"></div>

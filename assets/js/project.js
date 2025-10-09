@@ -135,6 +135,26 @@ const projects = [
     Previewlink: "",
     Githublink: "",
   },
+  {
+    title: "Banana Man Walk Cycle Animation",
+    cardImage: "assets/images/project-page/Martin walk cycle thumbnail.jpg",
+    images: ["assets/images/project-page/Martin walk cycle - walk cycle and parallaxing background exercise.mp4"],
+    description: "Walk cycle animation with parallaxing background featuring Martin the Banana Man.",
+    tagimg:
+      "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Bubble Tea with Stars Looping Animation",
+    cardImage: "assets/images/project-page/Starry boba tea thumbnail.jpg",
+    images: ["assets/images/project-page/Starry boba tea  3D animated loop.mp4"],
+    description: "3D animated loop of starry bubble tea.",
+    tagimg:
+      "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
 ];
 
 // function for rendering project cards data
@@ -188,9 +208,26 @@ function closeImageGallery() {
 
 function showImage(index) {
   const imgElement = document.getElementById('galleryImage');
+  const videoElement = document.getElementById('galleryVideo');
   const counter = document.getElementById('imageCounter');
+  const mediaPath = currentProjectImages[index];
 
-  imgElement.src = currentProjectImages[index];
+  // Check if the file is a video
+  const isVideo = mediaPath.match(/\.(mp4|webm|ogg)$/i);
+
+  if (isVideo) {
+    // Show video, hide image
+    imgElement.style.display = 'none';
+    videoElement.style.display = 'block';
+    videoElement.src = mediaPath;
+    videoElement.load();
+  } else {
+    // Show image, hide video
+    videoElement.style.display = 'none';
+    imgElement.style.display = 'block';
+    imgElement.src = mediaPath;
+  }
+
   counter.textContent = `${index + 1} / ${currentProjectImages.length}`;
 
   // Show/hide navigation buttons
