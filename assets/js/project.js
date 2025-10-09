@@ -67,11 +67,10 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Tic Tac Toe Game",
-    cardImage: "assets/images/project-page/tic-tac-toe.png",
-    images: ["assets/images/project-page/tic-tac-toe.png"],
-    description:
-      "Tested a React Tic Tac Toe Game using Jest and React Testing Library.",
+    title: "Cupcake Logo Design",
+    cardImage: "assets/images/project-page/Moms_Cupcake_Logo.png",
+    images: ["assets/images/project-page/Moms_Cupcake_Logo.png"],
+    description: "Logo design for Mom's Cupcake bakery.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
     Githublink: "",
