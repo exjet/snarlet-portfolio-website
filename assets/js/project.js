@@ -165,6 +165,20 @@ const projects = [
     Previewlink: "",
     Githublink: "",
   },
+  {
+    title: "Jeff and the Moon Have Tea",
+    cardImage: "assets/images/project-page/Jeff and the Moon Have Tea thumbnail.jpg",
+    images: [
+      "assets/images/project-page/Jeff and the Moon Have Tea - stop motion animated short.mov",
+      "assets/images/project-page/Jeff and the Moon Have Tea storyboards.pdf",
+      "assets/images/project-page/Jeff and the Moon Have Tea behind the scenes.pdf"
+    ],
+    description: "Stop motion animated short with storyboards and behind the scenes documentation.",
+    tagimg:
+      "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
 ];
 
 // function for rendering project cards data
@@ -216,24 +230,68 @@ function closeImageGallery() {
   document.body.style.overflow = 'auto';
 }
 
+async function renderPDFReversed(pdfPath) {
+  const pdfContainer = document.getElementById('pdfCanvas');
+  pdfContainer.innerHTML = ''; // Clear previous content
+
+  try {
+    const loadingTask = pdfjsLib.getDocument(pdfPath);
+    const pdf = await loadingTask.promise;
+    const numPages = pdf.numPages;
+
+    // Render pages in reverse order
+    for (let pageNum = numPages; pageNum >= 1; pageNum--) {
+      const page = await pdf.getPage(pageNum);
+      const canvas = document.createElement('canvas');
+      const context = canvas.getContext('2d');
+
+      // Calculate viewport with scale
+      const viewport = page.getViewport({ scale: 1.5 });
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+
+      // Render the page
+      await page.render({
+        canvasContext: context,
+        viewport: viewport
+      }).promise;
+
+      pdfContainer.appendChild(canvas);
+    }
+  } catch (error) {
+    console.error('Error loading PDF:', error);
+    pdfContainer.innerHTML = '<p style="color: white; padding: 20px;">Error loading PDF</p>';
+  }
+}
+
 function showImage(index) {
   const imgElement = document.getElementById('galleryImage');
   const videoElement = document.getElementById('galleryVideo');
+  const pdfContainer = document.getElementById('galleryPDFContainer');
   const counter = document.getElementById('imageCounter');
   const mediaPath = currentProjectImages[index];
 
-  // Check if the file is a video
-  const isVideo = mediaPath.match(/\.(mp4|webm|ogg)$/i);
+  // Check if the file is a video, PDF, or MOV
+  const isVideo = mediaPath.match(/\.(mp4|webm|ogg|mov)$/i);
+  const isPDF = mediaPath.match(/\.pdf$/i);
 
   if (isVideo) {
-    // Show video, hide image
+    // Show video, hide image and PDF
     imgElement.style.display = 'none';
+    pdfContainer.style.display = 'none';
     videoElement.style.display = 'block';
     videoElement.src = mediaPath;
     videoElement.load();
-  } else {
-    // Show image, hide video
+  } else if (isPDF) {
+    // Show PDF, hide image and video
+    imgElement.style.display = 'none';
     videoElement.style.display = 'none';
+    pdfContainer.style.display = 'block';
+    renderPDFReversed(mediaPath);
+  } else {
+    // Show image, hide video and PDF
+    videoElement.style.display = 'none';
+    pdfContainer.style.display = 'none';
     imgElement.style.display = 'block';
     imgElement.src = mediaPath;
   }
