@@ -189,6 +189,26 @@ const projects = [
     Previewlink: "",
     Githublink: "",
   },
+  {
+    title: "Steve Animated Short",
+    cardImage: "assets/images/project-page/Steve animated short thumbnail.jpg",
+    images: ["assets/images/project-page/Steve - animated short.MOV"],
+    description: "Animated short film featuring Steve.",
+    tagimg:
+      "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Transforming Ball Morph Animation",
+    cardImage: "assets/images/project-page/Transforming ball thumbnail.jpg",
+    images: ["assets/images/project-page/Transforming ball - morphing animation exercise.mp4"],
+    description: "Morphing animation exercise featuring a transforming ball.",
+    tagimg:
+      "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
 ];
 
 // function for rendering project cards data
