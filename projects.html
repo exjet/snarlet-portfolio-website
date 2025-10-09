@@ -316,6 +316,18 @@ add
      <!--Cursor-->
      <div class="cursor-dot-outline"></div>
      <div class="cursor-dot"></div>
+
+    <!-- Image Gallery Modal -->
+    <div id="imageGalleryModal" class="gallery-modal">
+        <span class="gallery-close" onclick="closeImageGallery()">&times;</span>
+        <div class="gallery-content">
+            <button class="gallery-nav gallery-prev" id="prevBtn" onclick="prevImage()">&#10094;</button>
+            <img id="galleryImage" class="gallery-image" src="" alt="Project Image">
+            <button class="gallery-nav gallery-next" id="nextBtn" onclick="nextImage()">&#10095;</button>
+        </div>
+        <div id="imageCounter" class="gallery-counter"></div>
+    </div>
+
     <!-- Dynamic footer section -->
 
     <!-- script -->
