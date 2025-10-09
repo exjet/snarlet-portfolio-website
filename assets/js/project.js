@@ -155,6 +155,16 @@ const projects = [
     Previewlink: "",
     Githublink: "",
   },
+  {
+    title: "Furby Story Animation",
+    cardImage: "assets/images/project-page/Furby Story thumbnail.jpg",
+    images: ["assets/images/project-page/Furby Story - motion graphic animated story.mp4"],
+    description: "Motion graphic animated story featuring a Furby character.",
+    tagimg:
+      "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
 ];
 
 // function for rendering project cards data
