@@ -169,6 +169,7 @@ a:hover {
   list-style-type: none;
   position: absolute;
   right: 0;
+  bottom: 0;
 }
 
 .card .menu-content::before,
