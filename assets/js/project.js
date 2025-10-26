@@ -6,6 +6,15 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "Animation Demo Reel",
+    cardImage: "assets/images/project-page/Demo-Reel-thumbnail.jpg",
+    images: ["assets/images/project-page/Demo-Reel-fixed.mp4"],
+    description: "A showcase of animation work featuring various projects and techniques.",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
     title: "Abstract 3D Scenes",
     cardImage: "assets/images/project-page/Scene 3.jpg",
     images: [
