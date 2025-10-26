@@ -19,13 +19,16 @@ body * {
 }
 
 .cursor-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #b83030f1;
+  width: 25px;
+  height: 25px;
+  background: url('../images/home/Merp.png') center/contain no-repeat;
+  border-radius: 0;
 }
 
 .cursor-dot-outline {
-  width: 20px;
-  height: 20px;
-  background-color: rgba(211, 115, 115, 0.959);
+  width: 35px;
+  height: 35px;
+  background: url('../images/home/Merp.png') center/contain no-repeat;
+  border-radius: 0;
+  opacity: 0.5;
 }
