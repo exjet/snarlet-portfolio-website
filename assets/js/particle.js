@@ -13,7 +13,7 @@ particlesJS("particles-js", {
       value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"],
     },
     shape: {
-      type: "circle",
+      type: "image",
       stroke: {
         width: 0,
         color: "#fff",
@@ -22,7 +22,7 @@ particlesJS("particles-js", {
         nb_sides: 5,
       },
       image: {
-        src: "https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png",
+        src: "assets/images/home/Merp.png",
         width: 100,
         height: 100,
       },
@@ -39,7 +39,7 @@ particlesJS("particles-js", {
       },
     },
     size: {
-      value: 8,
+      value: 12.5,
       random: true,
       anim: {
         enable: false,
@@ -51,9 +51,9 @@ particlesJS("particles-js", {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#808080",
-      opacity: 0.4,
-      width: 1,
+      color: "#7DD3F0",
+      opacity: 0.6,
+      width: 3,
     },
     move: {
       enable: true,
