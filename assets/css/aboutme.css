@@ -32,13 +32,15 @@ html {
   scroll-behavior: smooth;
 }
 
-.education_head {
+.education_head,
+.aboutme_head {
   font-weight: bold;
 }
 
-/*color of education page heading*/
+/*color of about me page heading*/
 
-.edu_background {
+.edu_background,
+.aboutme_background {
   color: #4e00bb;
 }
 
