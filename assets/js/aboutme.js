@@ -7,19 +7,19 @@ const moocscards = [];
 
 const experience = [
   {
-    img: "assets/images/education-page/c1.png",
+    img: "assets/images/aboutme-page/c1.png",
   },
   {
-    img: "assets/images/education-page/c2.jpg",
+    img: "assets/images/aboutme-page/c2.jpg",
   },
   {
-    img: "assets/images/education-page/c3.png",
+    img: "assets/images/aboutme-page/c3.png",
   },
   {
-    img: "assets/images/education-page/c4.png",
+    img: "assets/images/aboutme-page/c4.png",
   },
   {
-    img: "assets/images/education-page/c5.jpg",
+    img: "assets/images/aboutme-page/c5.jpg",
   },
 ];
 
