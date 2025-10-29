@@ -24,7 +24,7 @@ const projects = [
       "assets/images/project-page/Scene 4.jpg",
       "assets/images/project-page/Scene 5.jpg"
     ],
-    description: "A collection of abstract 3D scenes.",
+    description: "A collection of abstract 3D renders arranged into a scene.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
     Githublink: "",
@@ -33,7 +33,7 @@ const projects = [
     title: "Alien Chicken Illustration",
     cardImage: "assets/images/project-page/Alien chicken with cupcake.png",
     images: ["assets/images/project-page/Alien chicken with cupcake.png"],
-    description: "An alien chicken enjoying a cupcake.",
+    description: "A creature design of an alien chicken holding a cupcake.",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
     Previewlink: "",
     Githublink: "",
@@ -42,7 +42,7 @@ const projects = [
     title: "Bean Character Illustration",
     cardImage: "assets/images/project-page/Bean dude in space.png",
     images: ["assets/images/project-page/Bean dude in space.png"],
-    description: "A bean character floating in space.",
+    description: "An illustration of a bean character in space, surrounded by beans.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
     Githublink: "",
@@ -51,7 +51,7 @@ const projects = [
     title: "Bird Man",
     cardImage: "assets/images/project-page/Bird man.png",
     images: ["assets/images/project-page/Bird man.png"],
-    description: "A bird man character illustration.",
+    description: "A character design of a bird man in a dramatic pose.",
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
     Previewlink: "",
     Githublink: "",
@@ -60,7 +60,7 @@ const projects = [
     title: "Chicken Illustration",
     cardImage: "assets/images/project-page/chicken illustration.png",
     images: ["assets/images/project-page/chicken illustration.png"],
-    description: "A chicken character illustration.",
+    description: "A cartoon illustration of a chicken nesting.",
     tagimg:
       "data:image/png;base64,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",
     Previewlink: "",
@@ -70,7 +70,7 @@ const projects = [
     title: "Coffee Cat Illustration",
     cardImage: "assets/images/project-page/Latte Cat.png",
     images: ["assets/images/project-page/Latte Cat.png"],
-    description: "A cat enjoying a latte.",
+    description: "An illustration of a cat made out of frothed milk coming out of a coffee cup.",
     tagimg: "https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png",
     Previewlink: "",
     Githublink: "",
@@ -79,7 +79,7 @@ const projects = [
     title: "Cupcake Logo Design",
     cardImage: "assets/images/project-page/Moms_Cupcake_Logo.png",
     images: ["assets/images/project-page/Moms_Cupcake_Logo.png"],
-    description: "Logo design for Mom's Cupcake bakery.",
+    description: "An illustrated logo design for a home bakery.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
     Githublink: "",
@@ -88,7 +88,7 @@ const projects = [
     title: "Hybrid Creature Drawing",
     cardImage: "assets/images/project-page/Hybrid creature drawing.jpg",
     images: ["assets/images/project-page/Hybrid creature drawing.jpg"],
-    description: "A detailed drawing of a hybrid creature.",
+    description: "An ink and pencil drawing experiment to create a hybrid creature from a gecko, cat, and dragon.",
     tagimg:
       "data:image/png;base64,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",
     Previewlink: "",
@@ -98,7 +98,7 @@ const projects = [
     title: "Illustration of Coffee Character Drinking Coffee",
     cardImage: "assets/images/project-page/Coffee-cannibalism.png",
     images: ["assets/images/project-page/Coffee-cannibalism.png"],
-    description: "A coffee character enjoying a cup of coffee.",
+    description: "A cartoon illustration of two coffee cup characters. One of them is drinking coffee while the other watches in horror.",
     tagimg:
       "https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
     Previewlink: "",
@@ -108,7 +108,7 @@ const projects = [
     title: "Martin the Banana Man Character Design",
     cardImage: "assets/images/project-page/Martin the banana man character design.png",
     images: ["assets/images/project-page/Martin the banana man character design.png"],
-    description: "Character design illustration of Martin the Banana Man.",
+    description: "A character design of a banana man named Martin.",
     tagimg:
       "https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
     Previewlink: "",
@@ -118,7 +118,7 @@ const projects = [
     title: "Portrait of Barry the Parakeet",
     cardImage: "assets/images/project-page/Drawing of Barry the parakeet.png",
     images: ["assets/images/project-page/Drawing of Barry the parakeet.png"],
-    description: "A portrait illustration of Barry the Parakeet.",
+    description: "An illustrated portrait of a parakeet named Barry.",
     tagimg:
       "https://cdn-images-1.medium.com/max/1200/1*iDQvKoz7gGHc6YXqvqWWZQ.png",
     Previewlink: "",
@@ -128,7 +128,7 @@ const projects = [
     title: "Royalston Kneads Logo Design",
     cardImage: "assets/images/project-page/Royalston Kneads Logo.png",
     images: ["assets/images/project-page/Royalston Kneads Logo.png"],
-    description: "Logo design for Royalston Kneads bakery.",
+    description: "An illustrated logo design for a cottage kitchen called Royalston Kneads.",
     tagimg:
       "https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
     Previewlink: "",
@@ -138,7 +138,7 @@ const projects = [
     title: "Stipple Frog Drawing",
     cardImage: "assets/images/project-page/Frog stipple drawing.jpg",
     images: ["assets/images/project-page/Frog stipple drawing.jpg"],
-    description: "A detailed stipple drawing of a frog.",
+    description: "A drawing of a frog made up of tiny marks instead of lines. The marks are the Greek symbol for the letter 'f.'",
     tagimg:
       "https://image.flaticon.com/icons/png/512/643/643350.png",
     Previewlink: "",
@@ -148,7 +148,7 @@ const projects = [
     title: "Banana Man Walk Cycle Animation",
     cardImage: "assets/images/project-page/Martin walk cycle thumbnail.jpg",
     images: ["assets/images/project-page/Martin walk cycle - walk cycle and parallaxing background exercise.mp4"],
-    description: "Walk cycle animation with parallaxing background featuring Martin the Banana Man.",
+    description: "A walk cycle with a parallaxing background. I designed a banana man character and animated a walk cycle of him walking through a space station.",
     tagimg:
       "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
@@ -158,7 +158,7 @@ const projects = [
     title: "Bubble Tea with Stars Looping Animation",
     cardImage: "assets/images/project-page/Starry boba tea thumbnail.jpg",
     images: ["assets/images/project-page/Starry boba tea  3D animated loop.mp4"],
-    description: "3D animated loop of starry bubble tea.",
+    description: "A 3D animated loop, featuring a floating bubble tea drink with stars instead of tapioca pearls.",
     tagimg:
       "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
@@ -168,7 +168,7 @@ const projects = [
     title: "Furby Story Animation",
     cardImage: "assets/images/project-page/Furby Story thumbnail.jpg",
     images: ["assets/images/project-page/Furby Story - motion graphic animated story.mp4"],
-    description: "Motion graphic animated story featuring a Furby character.",
+    description: "A motion graphics animation where I recount my experience getting a Furby as a kid.",
     tagimg:
       "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
@@ -182,7 +182,7 @@ const projects = [
       "assets/images/project-page/Jeff and the Moon Have Tea storyboards.pdf",
       "assets/images/project-page/Jeff and the Moon Have Tea behind the scenes.pdf"
     ],
-    description: "Stop motion animated short with storyboards and behind the scenes documentation.",
+    description: "A stop motion animated short showing Jeff and the Moon's tea party.",
     tagimg:
       "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
@@ -192,7 +192,7 @@ const projects = [
     title: "Magnet Dance",
     cardImage: "assets/images/project-page/Magnet Dance thumbnail.jpg",
     images: ["assets/images/project-page/Magnet Dance - Stop motion found object animated short.mp4"],
-    description: "Stop motion found object animated short featuring dancing magnets.",
+    description: "A stop motion animated short about two magnets dancing together.",
     tagimg:
       "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
@@ -202,7 +202,7 @@ const projects = [
     title: "Steve Animated Short",
     cardImage: "assets/images/project-page/Steve animated short thumbnail.jpg",
     images: ["assets/images/project-page/Steve - animated short.MOV"],
-    description: "Animated short film featuring Steve.",
+    description: "A 2D animated short about two bounty hunters who are after the same target named Steve.",
     tagimg:
       "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
@@ -212,7 +212,7 @@ const projects = [
     title: "Transforming Ball Morph Animation",
     cardImage: "assets/images/project-page/Transforming ball thumbnail.jpg",
     images: ["assets/images/project-page/Transforming ball - morphing animation exercise.mp4"],
-    description: "Morphing animation exercise featuring a transforming ball.",
+    description: "An animation exercise featuring a ball that morphs into two different characters before transforming back into a ball.",
     tagimg:
       "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
@@ -250,15 +250,23 @@ document.addEventListener("DOMContentLoaded", showCards);
 // Image gallery modal functionality
 let currentImageIndex = 0;
 let currentProjectImages = [];
+let currentProjectDescription = '';
 
 function openImageGallery(projectIndex) {
   const project = projects[projectIndex];
   currentProjectImages = project.images || [project.cardImage];
+  currentProjectDescription = project.description || '';
   currentImageIndex = 0;
 
   const modal = document.getElementById('imageGalleryModal');
   modal.style.display = 'block';
   document.body.style.overflow = 'hidden';
+
+  // Update description
+  const descriptionElement = document.getElementById('projectDescription');
+  if (descriptionElement) {
+    descriptionElement.textContent = currentProjectDescription;
+  }
 
   showImage(currentImageIndex);
 }

@@ -342,19 +342,24 @@ add
     <!-- Image Gallery Modal -->
     <div id="imageGalleryModal" class="gallery-modal">
         <span class="gallery-close" onclick="closeImageGallery()">&times;</span>
-        <div class="gallery-content">
-            <button class="gallery-nav gallery-prev" id="prevBtn" onclick="prevImage()">&#10094;</button>
-            <img id="galleryImage" class="gallery-image" src="" alt="Project Image">
-            <video id="galleryVideo" class="gallery-image" controls loop style="display: none;">
-                <source src="" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div id="galleryPDFContainer" class="gallery-pdf-container" style="display: none;">
-                <div id="pdfCanvas"></div>
+        <div class="gallery-wrapper">
+            <div class="gallery-content">
+                <button class="gallery-nav gallery-prev" id="prevBtn" onclick="prevImage()">&#10094;</button>
+                <img id="galleryImage" class="gallery-image" src="" alt="Project Image">
+                <video id="galleryVideo" class="gallery-image" controls loop style="display: none;">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="galleryPDFContainer" class="gallery-pdf-container" style="display: none;">
+                    <div id="pdfCanvas"></div>
+                </div>
+                <button class="gallery-nav gallery-next" id="nextBtn" onclick="nextImage()">&#10095;</button>
             </div>
-            <button class="gallery-nav gallery-next" id="nextBtn" onclick="nextImage()">&#10095;</button>
+            <div class="gallery-footer">
+                <div id="imageCounter" class="gallery-counter"></div>
+                <div id="projectDescription" class="gallery-description"></div>
+            </div>
         </div>
-        <div id="imageCounter" class="gallery-counter"></div>
     </div>
 
     <!-- Dancing Merps Line -->
