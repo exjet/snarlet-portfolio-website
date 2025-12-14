@@ -1228,32 +1228,39 @@ SVG ANIMATIONS PROJECT PAGE
   gap: 15px;
   padding: 30px 20px;
   flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .filter-btn {
   padding: 12px 30px;
   font-size: 16px;
   font-weight: 600;
-  border: 2px solid #c41e6a;
-  background-color: transparent;
-  color: var(--text-color);
+  border: 2px solid #c41e6a !important;
+  background-color: transparent !important;
+  color: var(--text-color) !important;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 120px;
+  text-align: center;
 }
 
 .filter-btn:hover {
-  background-color: #c41e6a;
-  color: white;
+  background-color: #c41e6a !important;
+  color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(196, 30, 106, 0.3);
 }
 
 .filter-btn.active {
-  background-color: #c41e6a;
-  color: white;
+  background-color: #c41e6a !important;
+  color: white !important;
   box-shadow: 0 4px 12px rgba(196, 30, 106, 0.4);
 }
 
@@ -1264,7 +1271,22 @@ SVG ANIMATIONS PROJECT PAGE
   }
 
   .filter-btn {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-container {
+    gap: 8px;
+    padding: 15px 10px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+    min-width: 90px;
+    border-width: 2px !important;
   }
 }
